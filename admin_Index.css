@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body
 {
     height: 600px auto;
@@ -132,4 +133,137 @@ fieldset
     border:none;
     width:500px;
     margin:0px auto;
+=======
+body
+{
+    height: 600px auto;
+    width: 500px auto;
+    margin-left:100px;
+    margin-right: 100px;
+    background-color: #E3E3E3;
+}
+
+.wrapper
+{
+    height: 100px;
+    background-color: #4682B4;
+    border-top-right-radius: 50px;
+}
+
+.wrapper #logo
+{
+    float: left;
+    margin-left: 30px;
+    height:100px;
+    width:200px;
+}
+
+.wrapper #logo img
+{
+    height:100px;
+    width:150px;
+}
+
+.wrapper #main_title
+{
+    float: left;
+    height: 50px;
+    width: 750px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 50px;
+    
+}
+
+.container
+{
+    margin-top: 10px;
+    height: 420px;
+    border: 1px solid black;
+}
+
+
+/*admin_home*/
+
+button a
+{
+    text-decoration: none;
+    color: black;
+}
+
+
+/*Admin_enter_subjects*/
+
+
+.header
+{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.modules
+{
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    
+}
+
+button
+{
+    font-size: 20px;
+    margin-left: 50px;
+    height: 100px;
+    width: 120px;
+}
+
+.container form
+{
+    padding-top: 10px;
+    text-align: center;
+    margin-left: 320px;
+    margin-top: 20px;
+    height: 400px;
+    width: 500px;
+    border: 1px solid black;
+}
+
+.container form select
+{
+    height: 30px;
+    width: 170px;
+}
+
+.container form #radio1, #radio2, #radio3
+{
+    padding-top: 15px;
+}
+
+.container form #checkbox
+{
+    margin-top: 20px;
+}
+
+
+/*admin_change_password*/
+
+label
+{
+    font-size: 20px;
+    display:inline-block;
+    width:200px;
+    margin-right:30px;
+    text-align:right;
+}
+
+
+fieldset
+{
+    border:none;
+    width:500px;
+    margin:0px auto;
+>>>>>>> a6d7089301d0182504668962b1572fe48b9c9e17
 }

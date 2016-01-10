@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 
 <html>
@@ -200,4 +201,208 @@
         
     </body>
     
+=======
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+    
+        <title>JCU Online Timetable</title>
+        
+        <link type="text/css" rel="stylesheet" href="Index.css">
+        
+        <style>
+        
+            .container
+            {
+                height: 420px;
+            }
+            
+            
+        </style>
+        
+        <script type="text/javascript">
+            
+            var count = 2;
+            
+            function validate() 
+            {
+                
+                var un = document.myform.username.value;
+                var pw = document.myform.password.value;
+                var valid = false;
+
+                var unArray = ["13197394", "13186236", "13033983"];  // as many as you like - no comma after final entry
+                var pwArray = ["12345", "12345", "12345"];  // the corresponding passwords;
+
+                for (var i=0; i <unArray.length; i++) 
+                {
+                    if ((un == unArray[i]) && (pw == pwArray[i])) 
+                    {
+                        valid = true;
+                        break;
+                    }
+                }
+
+                if (valid) 
+                {
+                    alert ("Login was successful");
+                    window.location = "#";
+                    return false;
+                }
+
+                var t = " tries";
+                if (count == 1) {t = " try"}
+
+                if (count >= 1) 
+                {
+                    alert ("Invalid username and/or password.  You have " + count + t + " left.");
+                    document.myform.username.value = "";
+                    document.myform.password.value = "";
+                    setTimeout("document.myform.username.focus()", 25);
+                    setTimeout("document.myform.username.select()", 25);
+                    count --;
+                }
+
+                else 
+                {
+                    alert ("Still incorrect! You have no more tries left!");
+                    document.myform.username.value = "No more tries allowed!";
+                    document.myform.password.value = "";
+                    document.myform.username.disabled = true;
+                    document.myform.password.disabled = true;
+                    return false;
+                }
+
+            }
+
+
+        </script>
+        
+    </head>
+    
+    <body>
+    
+        <div class="wrapper">
+        
+            <div id="logo">
+                
+                <a href="Index.php"><img src="Images/JCUSColourLogo.png"></a>
+            
+            </div>
+            <div id="top_nav">
+            
+                <ul>
+                
+                    <li><a href="Index.php">Home</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Instructions</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+        </div>
+        
+        <div class="container">
+        
+        
+             <div class="login-card">
+                 
+                 <h2 style="text-align:center">LOGIN</h2>
+                 
+                 <form name = "myform" id="login_form" method="post">
+                     
+                     
+                     
+                     <label>UserName:</label><br>
+                     <input type="text" name="username" style="height:20px; width:200px" placeholder="Enter Your JCU ID"> <br>
+                     
+                     
+                     <label>Password:</label><br>
+                     <input type="password" name="password"  style="height:20px; width:200px" placeholder="Enter Your Password"><br><br>
+
+                    <input type="button" value="Submit" name="Submit" onclick= "validate()" style="height:30px; width:100px; margin-left:100px; font-weight:bold"><br><br>
+                     
+
+                 </form>
+                
+                 <a href="#">Forgot Password?</a>
+                 <a href="#">Create Account</a>
+	
+            </div>
+ 
+            
+        </div>
+        
+        <div class="footer">
+            
+            <div id="foot1">
+            
+                <div id="logo2">
+                
+                    <a href="#"><img src="Images/JCU%20Australia.png"></a>
+                    
+                </div>
+                
+                <div id="right_panel">
+                
+                    <li>1 University</li>
+                    <li>2 Countries</li>
+                    <li>3 Tropical locations</li><br><br>
+                    <p>Creating a brighter future for life in the tropics world-wide through graduates and discoveries that make a difference.</p>
+                
+                </div>
+                
+            </div>
+            
+            <div id="foot2">
+            
+                <div id="left_panel">
+                    
+                    <ul>
+                
+                        <li><a href="#"><img src="Images/Youtube.png"></a></li>
+                        <li><a href="#"><img src="Images/Twitter.png"></a></li>
+                        <li><a href="#"><img src="Images/Facebook.png"></a></li>
+                        <li><a href="#"><img src="Images/Instagram.png"></a></li>
+                
+                    </ul>
+                    
+                </div>
+                
+                <div id="right_panel">
+                
+                    <ul>
+                    
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">Site map</a></li>
+                        <li><a href="#">Terms of use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Email for Staff</a></li>
+
+                    </ul>
+                
+                </div>
+                
+            </div>
+            
+            <div id="foot3">
+                
+                <div id="copyright">&copy; All copyrights Reserved.
+            
+                </div>
+            
+            </div>
+        
+        </div>
+        
+    </body>
+    
+>>>>>>> a6d7089301d0182504668962b1572fe48b9c9e17
 </html>
