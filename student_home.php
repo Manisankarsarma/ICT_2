@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 
 <html>
@@ -6,36 +8,50 @@
     
         <title>JCU Online Timetable</title>
         
+        <link type="text/css" rel="stylesheet" href="Index.css">
+        <script type="text/javascript" src="js/jquery.min.js"></script>
         
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-  
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-		
-		<link type="text/css" rel="stylesheet" href="Index.css">
-		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  
-		<style>
-		
-		
-		
-			.carousel-inner > .item > img,
-			.carousel-inner > .item > a > img 
-			{
-				width: 70%;
-		
-				margin: auto;
-			}
+        <style>
+        
+            .container
+            {
+                height: 420px;
+            }
 			
-			.container
+			.header
 			{
-				border:0px;
-				width:1150px;
+				margin-top: 50px;
+				margin-left:430px;
 			}
 
-		</style>
+			
+			.modules
+			{
+				height: 200px;
+				width: 100%;
+				text-align: center;
+				padding-top: 50px;
+    
+			}
+
+			button
+			{
+				font-size: 20px;
+				margin-left: 50px;
+				height: 100px;
+				width: 140px;
+			}
+			button a
+			{
+				text-decoration: none;
+				color: black;
+			}
+
+            
+            
+        </style>
+        
+        
         
     </head>
     
@@ -45,87 +61,54 @@
         
             <div id="logo">
                 
-                <a href="#"><img src="Images/JCUSColourLogo.png"></a>
+                <a href="Index.php"><img src="Images/JCUSColourLogo.png"></a>
             
             </div>
-			
-			<div id="main_title">
+            
+            <div id="main_title">
             
                 ONLINE TIMETABLE SYSTEM
                 
             </div>
-			
-		</div>
-		
-        <div class="top_nav">
             
-			<ul>
+		</div>
+			
+            <div class="top_nav">
+            
+                <ul>
                 
-                <li><a href="Index.php">Home</a></li>
-                <li><a href="login.php">Login</a></li>
-                <li><a href="Instructions.html">Instructions</a></li>
-                <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="Index.php">Home</a></li>
+                    <li><a href="#">Logged in as..</a></li>
+                    <li><a href="login.php">Logout</a></li>
                     
-            </ul>
+                    
+                </ul>
                 
-        </div>
+            </div>
             
         
         
         <div class="container">
         
-		
-			<div id="myCarousel" class="carousel slide" data-ride="carousel">
-				<!-- Indicators -->
-    
-
-				<!-- Wrapper for slides -->
-				<div class="carousel-inner" role="listbox">
-					<div class="item active">
-						<img src="Images/Home1.jpg" alt="Chania" width="1000" height="500">
-					</div>
-
-					<div class="item">
-						<img src="Images/Home2.jpg" alt="Chania" width="1000" height="500">
-					</div>
-    
-					
-
-					<div class="item">
-						<img src="Images/Home4.jpg" alt="Flower" width="1000" height="500">
-					</div>
-				</div>
-
-				<!-- Left and right controls -->
-				<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-				</a>
-				<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-				</a>
-			</div>
-			
-			
-			
-			<div id="news_bar">
+        
+             <div class="header">
             
-                <marquee>
+                <h1>STUDENT HOMEPAGE</h1>
                 
-                    <li>JCU University Council elects next Chancellor </li>
-                    <li>How not to raise a brat in todays busy, complex world</li>
-                    <li>JCU Singapore Students Recognised by Junior Nobel Prize</li>
-                 
-                </marquee>
+            </div>
+			
+		
+            
+            <div class="modules">
+            
+                <button type="submit" name="edit" style="background-color:RGB(85,107,47)"><a href="subjects_display.php">Select Subjects</a></button>
+                
+                <button type="submit" name="view" style="background-color:RGB(201,103,92)"><a href="#">View Timetable</a></button>
+                
+               
             
             </div>
-
-		</div>
-		
-		
-            
-            
+ 
             
         </div>
         
@@ -144,7 +127,7 @@
                     <li>1 University</li>
                     <li>2 Countries</li>
                     <li>3 Tropical locations</li><br><br>
-                    <p style="font-family:serif; font-size:16px; float:left">Creating a brighter future for life in the tropics world-wide through graduates and discoveries that make a difference.</p>
+                    <p>Creating a brighter future for life in the tropics world-wide through graduates and discoveries that make a difference.</p>
                 
                 </div>
                 

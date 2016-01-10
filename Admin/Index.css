@@ -9,8 +9,7 @@ body
 
 .wrapper
 {
-	margin-top:10px;
-    height: 90px;
+    height: 100px;
     background-color: #4682B4;
     border-top-right-radius: 50px;
 }
@@ -19,84 +18,42 @@ body
 {
     float: left;
     margin-left: 30px;
-    height:90px;
+    height:100px;
     width:200px;
 }
 
 .wrapper #logo img
 {
-    height:90px;
+    height:100px;
     width:150px;
-}
-
-.wrapper #main_title
-{
-    float: left;
-	font-family:serif;
-    height: 50px;
-    width: 750px;
-    text-align: center;
-    margin-top: 20px;
-    margin-left: 50px;
-    font-weight: bold;
-    font-size: 50px;
-    
-}
-
-.top_nav
-{
-	margin-top:5px;
-    height: 40px;
-    background-color: #4682B4;
-    
-}
-
-.top_nav ul
-{
-	float:right;
-	margin-top:10px;
-	padding-right:30px;
-    list-style: none;
-}
-
-.top_nav li
-{
-    float: left;
-    margin-left: 20px;
-}
-
-.top_nav li a
-{
-    text-decoration: none;
-    color: white;
-	font-family:serif;
-    font-size: 20px;
-    font-weight: bold;
 }
 
 .container
 {
     margin-top: 10px;
-    height: 420px auto;
-	background-color:white;
+    height: 420px;
     border: 1px solid black;
+}
+
+#carousel
+{
+    text-align: center;
+    padding-top: 20px;
+    height: 350px;
 }
 
 #news_bar
 {
     height: 50px;
-	background-color:white;
-	
 }
 
 #news_bar marquee li
 {
     line-height: 30px;
-    font-size: 13px;
+    font-size: 16px;
     margin-top: 10px;
     margin-left: 20px;
     float: left;
-	font-weight:bold;
 }
 
 .footer
@@ -116,14 +73,11 @@ body
     margin-top: 10px;
     height: 100px;
     width: 400px;
-
 }
 
 .footer #foot1 #logo2 img
 {
-    height: 80px;
-	padding-top:10px;
-	padding-left:30px;
+    height: 100px;
 }
 
 .footer #foot1 #right_panel
@@ -216,7 +170,6 @@ body
                 line-height: 30px;
                 height: 330px;
                 width: 400px;
-				background-color:#E3E3E3;
                 border: 1px solid black;
                 border-radius: 30px;
             }
@@ -256,22 +209,17 @@ body
 .container #left_panel {
      
     float:left; 
-    width:550px; 
-    height:400px;
-	margin-left:10px;
-	margin-top:20px;
-    border: 1px solid black;
+    width:50%; 
+    height:100%;
+    border: 1px solid block;
 }
 
 .container #right_panel {
     
-    float:left; 
-    width:550px; 
-    height:400px auto;
-	margin-left:20px;
-	margin-top:20px;
-	border:1px solid black;
-   
+    float:right; 
+    width:50%; 
+    height:100%;
+    border: 1px solid block;
 }
 
 .container #left_panel form
@@ -283,7 +231,6 @@ body
     padding-top: 30px;
     text-align: center;
     border-radius: 30px;
-	background-color:#E3E3E3;
     border: 1px solid black;
 }
 
